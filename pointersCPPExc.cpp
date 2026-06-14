@@ -1,6 +1,7 @@
 #include <iostream>
  // https://pynative.com/cpp-pointers-exercises/
-int main (){
+
+ int main (){
 /*   Excerise 1  
  int value =100;
     int * ptr = &value;
@@ -42,8 +43,29 @@ std::cout << "Score: " << *(score_ptr+2) << std::endl;
 
  */
 
+/* 
+Excercise 6
+char word[] = "CODE";
+char * p = word;
+std::cout << "Word: " << *(p+2) << std::endl;
+ */
 
- 
+
+/* 
+Excercise 7
+
+int * safe_ptr = nullptr;
+if(safe_ptr == nullptr){
+std::cout << "Pointer is null, cannot dereference. " << std::endl;
+int valid =10;
+    safe_ptr = &valid;
+    
+}
+
+if(safe_ptr != nullptr)
+    std::cout << "Pointer is now valid. Dereferenced value: " << *safe_ptr << std::endl;
+ */
+
 
 return 0;
 }
