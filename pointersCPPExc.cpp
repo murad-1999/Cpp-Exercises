@@ -34,8 +34,16 @@ for (int i =0; i<size;i++){
 data_ptr++;
 } */
 
+/* 
+Excercise 5
+int scores[] = {85, 90, 78, 95, 88};
+int * score_ptr = &scores[0];
+std::cout << "Score: " << *(score_ptr+2) << std::endl;
+
+ */
 
 
+ 
 
 return 0;
 }
