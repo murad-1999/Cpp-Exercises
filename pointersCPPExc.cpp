@@ -15,5 +15,27 @@ int * num_ptr = &number;
 std::cout << "Number: " << *num_ptr << std::endl;
  */
 
+/* 
+Excercise 3
+int x = 42;
+int * p1=&x;
+int * * p2=&p1;
+
+std::cout << "pt2 value: " << **p2 << std::endl;
+ */
+
+/* 
+Excercise 4
+int data[]={10, 20, 30,40,50};
+int size = sizeof(data)/4; // int size is 4 bytes!!
+int * data_ptr = &data[0];
+for (int i =0; i<size;i++){
+ std::cout << "Data: " << *data_ptr << std::endl;
+data_ptr++;
+} */
+
+
+
+
 return 0;
 }
