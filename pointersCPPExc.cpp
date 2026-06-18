@@ -1,6 +1,10 @@
 #include <iostream>
  // https://pynative.com/cpp-pointers-exercises/
 
+
+ void increment_number(int * x){
+    *x+=10;
+ }
  int main (){
 /*   Excerise 1  
  int value =100;
@@ -66,6 +70,37 @@ if(safe_ptr != nullptr)
     std::cout << "Pointer is now valid. Dereferenced value: " << *safe_ptr << std::endl;
  */
 
+ /* 
+Excercise 8
+int x = 10;
+    std::cout << "Before increment: " << x << std::endl;
+    increment_number(&x);
+    std::cout << "After increment: " << x << std::endl;
+ */
+
+/* 
+Excercise 9
+int i;
+int * ptr;
+
+std::cout<<"int size"<< sizeof(i)<<std::endl<< "ptr size: "<< sizeof(ptr)<<std::endl;
+ */
+
+/* 
+Exercise 10: Array Summation
+Practice Problem: Write a program to calculate and print the sum of all elements in a given integer array {1, 5, 10, 15, 20} using only pointer arithmetic to access the elements. Do not use the array index operator ([]).
+
+int array[] = {1, 5, 10, 15, 20};
+int size = sizeof(array) / sizeof(array[0]);
+int sum = 0;
+int *ptr = array;
+
+for (int i = 0; i < size; ++i) {
+    sum += *(ptr + i);
+}
+
+std::cout << "Sum of array elements: " << sum << std::endl;
+ */
 
 return 0;
 }
