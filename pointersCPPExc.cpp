@@ -75,6 +75,7 @@ Excercise 8
 int x = 10;
     std::cout << "Before increment: " << x << std::endl;
     increment_number(&x);
+
     std::cout << "After increment: " << x << std::endl;
  */
 
@@ -102,5 +103,17 @@ for (int i = 0; i < size; ++i) {
 std::cout << "Sum of array elements: " << sum << std::endl;
  */
 
+/* 
+Exercise 11
+int numbers[] = {1, 2, 3, 4, 5};
+int size = sizeof(numbers) / sizeof(numbers[0]);
+int * ptr = numbers;
+
+for(int i = size - 1; i >= 0; i--) {
+    std::cout << "Elements in reverse order: " << *(ptr + i) << std::endl;
+}
+ */
 return 0;
 }
+
+
